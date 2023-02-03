@@ -1,61 +1,79 @@
 body {
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
-h1, h2, footer {
-    text-align: center;
+h1,
+h2,
+footer {
+  text-align: center;
 }
 table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    border: 2px solid black;
-    line-height: 1.8em;
-    padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 2px solid black;
+  line-height: 1.8em;
+  padding: 1em;
 }
 thead {
-    font-size: larger;
-    background-color: dimgray;
-    color: white
+  font-size: larger;
+  background-color: dimgray;
+  color: white;
 }
 /* erste Spalte mit anderer Schriftart */
 td:first-child {
-    font-family: "Lucida Console", monospace;
+  font-family: "Lucida Console", monospace;
 }
 /* jede 2te Zeile farbig */
 tbody tr:nth-child(even) {
-    background: Silver
+  background: Silver;
 }
 /* Flexbox, damit Footer immer unten ist */
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 98vh;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh;
+  justify-content: space-between;
 }
 td {
-    padding-left: 0.8em;
+  padding: 0.6em;
 }
 
 .navTop {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding-right: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 1em;
 }
 
 /* Sprung zum Seitenanfang */
-a:link, a:visited, a:hover, a:active  { 
-    text-decoration: none; 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
 }
 
 .navTop a {
-    font-size: larger;
+  font-size: larger;
 }
 
 nav {
-    display: flex;
-    justify-content:space-around;
-    padding: 2em;
-    font-size: larger;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.top {
+  background-color: hsla(0, 0%, 96%, 0.8);
+  /* opacity: 0.3; */
+  background: repeating-linear-gradient(
+    -45deg,
+    hsla(237, 13%, 65%, 0.179),
+    hsla(237, 13%, 65%, 0.206) 4px,
+    hsla(0, 0%, 96%, 0.8) 4px,
+    hsla(0, 0%, 96%, 0.8) 20px
+  );
 }
