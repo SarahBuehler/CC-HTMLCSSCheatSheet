@@ -15,6 +15,7 @@ table {
 thead {
     font-size: larger;
     background-color: dimgray;
+    color: white
 }
 /* erste Spalte mit anderer Schriftart */
 td:first-child {
@@ -33,4 +34,28 @@ tbody tr:nth-child(even) {
 }
 td {
     padding-left: 0.8em;
+}
+
+.navTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 1em;
+}
+
+/* Sprung zum Seitenanfang */
+a:link, a:visited, a:hover, a:active  { 
+    text-decoration: none; 
+}
+
+.navTop a {
+    font-size: larger;
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    padding: 2em;
+    font-size: larger;
+    font-weight: bold;
 }
