@@ -1,0 +1,36 @@
+body {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2, footer {
+    text-align: center;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 2px solid black;
+    line-height: 1.8em;
+    padding: 1em;
+}
+thead {
+    font-size: larger;
+    background-color: dimgray;
+}
+/* erste Spalte mit anderer Schriftart */
+td:first-child {
+    font-family: "Lucida Console", monospace;
+}
+/* jede 2te Zeile farbig */
+tbody tr:nth-child(even) {
+    background: Silver
+}
+/* Flexbox, damit Footer immer unten ist */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+    justify-content: space-between;
+}
+td {
+    padding-left: 0.8em;
+}
