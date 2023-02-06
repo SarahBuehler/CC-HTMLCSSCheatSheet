@@ -19,7 +19,10 @@ Build your own cheat sheet -->
           <a href="#semanticTags">Semantic/Structural tags</a>
           <a href="#tableTags">Table tags</a>
           <a href="#tableAttributes">Table attributes</a>
+        </nav>
+        <nav>
           <a href="#commonCSS">Common CSS</a>
+          <a href="#centeringCSS">Centering in CSS</a>
         </nav>
       </div>
       <main>
@@ -331,10 +334,74 @@ Build your own cheat sheet -->
             </tr>
             <tr>
               <td>
-                &lt;h1 style="color:blue; font-size:14px;"&gt;Dies ist eine
+                &lt;h1 style="color:blue; font-size:14px;"&gt; Dies ist eine
                 Überschrift&lt;/h1&gt;
               </td>
               <td>CSS inside an HTML code</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="navTop">
+          <a href="#">&#9650;</a>
+        </div>
+
+        <h2 id="centeringCSS">Centering in CSS</h2>
+        <table>
+          <thead>
+            <th>Tag</th>
+            <th>Description</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                .center {<br />text-align: center;<br />
+                }
+              </td>
+              <td>
+                Centers inline elements horizontally, wthin a block-level parent
+                element.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                .center-me {<br />
+                margin: 0 auto; <br />
+                }
+              </td>
+              <td>
+                Centers a block-level element by giving it margin-left and
+                margin-right of auto (and it has a set width)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                .link {<br />
+                padding-top: 30px;<br />
+                padding-bottom: 30px;<br />
+                }
+              </td>
+              <td>
+                Centers a single line vertically, just because there is equal
+                padding above and below it
+              </td>
+            </tr>
+            <tr>
+              <td>
+                .center-table p {<br />
+                vertical-align: middle;<br />
+                }
+              </td>
+              <td>Centers multiple lines vertically with vertical-align</td>
+            </tr>
+            <tr>
+              <td>
+                .parent {<br />
+                display: flex;<br />
+                flex-direction: column;<br />
+                justify-content: center;<br />
+                }
+              </td>
+              <td>Centers everything with flex-box (or grid)</td>
             </tr>
           </tbody>
         </table>
