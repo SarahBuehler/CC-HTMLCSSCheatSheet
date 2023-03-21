@@ -6,4 +6,6 @@
 
 Make your own notes about HTML and CSS (and maybe more). 
 
+This project is constantly expanded and revised, so the screenshot isn't up to date.
+
 ![screenshot of my version of the website](CC-HTMLCSSCheatSheet.png)
